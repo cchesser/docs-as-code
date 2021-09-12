@@ -47,5 +47,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          cname: docs-as-code.che55er.io
+          cname: che55er.io
           
