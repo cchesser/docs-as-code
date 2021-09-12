@@ -3,11 +3,9 @@ title: "Documentation"
 linkTitle: "Documentation"
 weight: 20
 cascade:
-- type: "blog"
-  # set to false to include a blog section in the section nav along with docs
-  toc_root: true
+- type: "reveal"
   _target:
-    path: "/blog/**"
+    path: "/slides/**"
 - type: "docs"
   _target:
     path: "/**"

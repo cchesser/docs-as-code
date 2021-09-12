@@ -4,7 +4,7 @@ title = "Docs as Code"
 enableRobotsTXT = true
 
 # Hugo allows theme composition (and inheritance). The precedence is from left to right.
-theme = ["docsy"]
+theme = ["reveal-hugo", "docsy"]
 
 # Will give values to .Lastmod etc.
 enableGitInfo = true
@@ -38,6 +38,11 @@ blog = "/:section/:year/:month/:day/:slug/"
 home = [ "HTML" ]
 page = [ "HTML" ]
 #section = [ "HTML", "RSS", "print"]
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
 
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
 [blackfriday]
