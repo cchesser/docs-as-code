@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>Docs as Code</title>
+<meta name="description" content="Docsy does docs">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/docs-as-code/reveal-js/reset.css">
+<link rel="stylesheet" href="/docs-as-code/reveal-js/reveal.css">
+<link rel="stylesheet" href="/docs-as-code/_.min.cbee1f7b1fadc7e525882a6d2dfba1af8de7acadf4a4821011b93fb0a7cfb9e7.css" id="theme"><link rel="stylesheet" href="/docs-as-code/highlight-js/agate.min.css">
+    
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><p style="width: 500px;">
+<img src="title.png" style="float: left;" />
+<h1 style="text-align: left">DOCS <br />AS<br />CODE</h1>
+<div style="text-align: left">
+  <img style="vertical-align: top; float: left; padding-right: 10px" src="logo.png" width="40" >
+  <span>
+    Carl Chesser
+    <br />
+    <small><a href="https://twitter.com/che55er">@che55er</a> | <a href="https://che55er.io/">che55er.io</a></small>
+  </span>
+</div>
+</p> 
+</section>
+<section data-noprocess>
+  <h2>About Me</h2>
+  <section data-auto-animate>
+    <img id="cerner" src="cerner.png" width="300" /><br />
+  </section>
+  <section data-auto-animate>
+    <img id="map" src="ks-mo-map.png" width="300" /><br />
+    <img id="cerner" src="cerner.png" width="300" /><br />
+  </section>
+  <section data-auto-animate>
+    <img id="joes" src="joe-kc.png" width="200" /><br />
+    <img id="map" src="ks-mo-map.png" width="300" /><br />
+    <img id="cerner" src="cerner.png" width="300" /><br />
+  </section>
+</section>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="drawings.png"
+      data-background-opacity="0.6"
+      id="me"
+      data-transition-speed="fast">
+  
+<section data-noprocess data-state="make-it-pop">
+    <h2><a href="https://che55er.io">Guides through Drawings</a></h2>
+</section>
+</section><section>
+<h1 id="outline">Outline</h1>
+<p>🔍 Introduction  📚 History  🚀 Examples</p>
+</section><section>
+<h1 id="-">📄 🧑‍💻</h1>
+<h2 id="docs-as-code">Docs as Code?</h2>
+<blockquote>
+<p>Documentation as Code (Docs as Code) refers to a philosophy that you should be writing documentation with the same tools as code:</p>
+<ul>
+<li>Issue Trackers</li>
+<li>Version Control (git)</li>
+<li>Plain Text Markup (Markdown, reStructuredText, Asciidoc)</li>
+<li>Code Reviews</li>
+<li>Automated Tests</li>
+</ul>
+</blockquote>
+</section><section>
+<h2 id="history">History</h2>
+<img style="vertical-align:middle;" src="title.png" width="300">
+</section><section>
+<h1 id="heading">📚</h1>
+<h2 id="twitter">Twitter</h2>
+<p>TODO: Write the Docs references / year</p>
+</section><section>
+<h1 id="heading-1">📚</h1>
+<h2 id="google">Google</h2>
+<p>TODO: DoWrite the Docs references / year</p>
+</section>
+<section data-noprocess>
+<h2>GitHub Actions</h2>
+<pre><code data-line-numbers="3-5|8-10|13-15">
+<table>
+  <tr>
+    <td>Apples</td>
+    <td>$1</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Oranges</td>
+    <td>$2</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>Kiwi</td>
+    <td>$3</td>
+    <td>1</td>
+  </tr>
+</table>
+</code></pre>
+</section>
+</section><section>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+
+<script type="application/json" id="reveal-hugo-site-params">null</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"custom-theme.scss","custom_theme_compile":true,"highlight_theme":"agate"}</script>
+
+<script src="/docs-as-code/reveal-js/reveal.js"></script>
+
+
+
+
+
+
+<script type="text/javascript" src="/docs-as-code/reveal-js/plugin/markdown/markdown.js"></script>
+
+<script type="text/javascript" src="/docs-as-code/reveal-js/plugin/highlight/highlight.js"></script>
+
+<script type="text/javascript" src="/docs-as-code/reveal-js/plugin/zoom/zoom.js"></script>
+
+
+<script type="text/javascript" src="/docs-as-code/reveal-js/plugin/notes/notes.js"></script>
+
+
+<script type="text/javascript">
+  
+  
+  function camelize( map ) {
+    if ( map ) {
+      Object.keys( map ).forEach( function ( k ) {
+        newK = k.replace( /(\_\w)/g, function ( m ) { return m[ 1 ].toUpperCase() } );
+        if ( newK != k ) {
+          map[ newK ] = map[ k ];
+          delete map[ k ];
+        }
+      } );
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse( document.getElementById( 'reveal-hugo-site-params' ).innerHTML );
+  var revealHugoPageParams = JSON.parse( document.getElementById( 'reveal-hugo-page-params' ).innerHTML );
+  
+  var options = Object.assign( {
+    plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+  },
+    camelize( revealHugoDefaults ),
+    camelize( revealHugoSiteParams ),
+    camelize( revealHugoPageParams ) );
+  Reveal.initialize( options );
+</script>
+    
+    
+  </body>
+</html>
