@@ -1,4 +1,4 @@
-baseURL = "https://docs-as-code.che55er.io"
+baseURL = "https://chesser.github.io/docs-as-code"
 title = "Docs as Code"
 
 enableRobotsTXT = true
@@ -93,8 +93,7 @@ weight = 1
 # Everything below this are Site Params
 
 [params]
-copyright = "The Docsy Authors"
-privacy_policy = "https://policies.google.com/privacy"
+copyright = "-"
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
@@ -112,7 +111,7 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://docs-as-code.che55er.io"
+url_latest_version = "https://chesser.github.io/docs-as-code"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/cchesser/docs-as-code"
