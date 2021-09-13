@@ -1,5 +1,8 @@
 @import "reveal-js/css/theme/template/mixins";
 @import "reveal-js/css/theme/template/settings";
+// @import "vendor/Font-Awesome/scss/fontawesome.scss";
+// @import "vendor/Font-Awesome/scss/solid.scss";
+// @import "vendor/Font-Awesome/scss/brands.scss";
 
 //$backgroundColor: #eeeeee;
 
@@ -15,7 +18,7 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingFontWeight: 600;
-$linkColor: #808080; // #CC9900;
+$linkColor: #1E3163; // #808080; // #CC9900;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
