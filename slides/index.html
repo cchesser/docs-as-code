@@ -9,8 +9,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/docs-as-code/reveal-js/reset.css">
-<link rel="stylesheet" href="/docs-as-code/reveal-js/reveal.css">
-<link rel="stylesheet" href="/docs-as-code/_.min.3fabcfd4f1f58931aa95954c82325599893f433026093208d5a1323ecb70d4ee.css" id="theme"><link rel="stylesheet" href="/docs-as-code/highlight-js/agate.min.css">
+<link rel="stylesheet" href="/docs-as-code/reveal-js/reveal.css"><link rel="stylesheet" href="/docs-as-code/reveal-js/theme/black.css" id="theme">
+<link rel="stylesheet" href="/docs-as-code/highlight-js/agate.min.css">
     
   </head>
   <body>
@@ -18,12 +18,13 @@
       <div class="slides">
   
 
-    <section><p style="width: 500px">
-<img src="title.png" style="float: left" />
-<h1 style="text-align: left">DOCS <br />AS<br />CODE</h1>
-<div style="text-align: left">
-  <img style="vertical-align: top; float: left; padding-right: 10px" src="logo.png" width="40" >
-  <span>
+    <section><section data-background-color="white" >
+<p style="width: 500px;" >
+<img src="img/title.png" style="float: left" />
+<h1 style="text-align: left; color: black">DOCS <br />AS<br />CODE</h1>
+<div style="text-align: left;" >
+  <img style="vertical-align: top; float: left; padding-right: 10px" src="img/avatar.png" width="40" >
+  <span style="color: black" >
     Carl Chesser
     <br />
     <small><a href="https://twitter.com/che55er">@che55er</a> | <a href="https://che55er.io/">che55er.io</a></small>
@@ -31,66 +32,166 @@
 </div>
 </p> 
 </section>
-<section data-noprocess>
-  <h2>About Me</h2>
+</section>
+<section data-background-color="white" data-noprocess>
+  <h2 style="color: black" >About Me</h2>
   <section data-auto-animate>
-    <img id="cerner" src="cerner.png" width="300" /><br />
+    <img id="cerner" src="img/cerner.png" width="500" /><br />
   </section>
   <section data-auto-animate>
-    <img id="map" src="ks-mo-map.png" width="300" /><br />
-    <img id="cerner" src="cerner.png" width="300" /><br />
+    <img id="map" src="img/ks-mo-map.png" width="500" /><br />
+    <img id="cerner" src="img/cerner.png" width="100" /><br />
   </section>
   <section data-auto-animate>
-    <img id="joes" src="joe-kc.png" width="200" /><br />
-    <img id="map" src="ks-mo-map.png" width="300" /><br />
-    <img id="cerner" src="cerner.png" width="300" /><br />
+    <img id="joes" src="img/joe-kc.png" width="300" /><br />
+    <img id="map" src="img/ks-mo-map.png" width="100" /><br />
+    <img id="cerner" src="img/cerner.png" width="100" /><br />
   </section>
 </section>
 </section>
 
 <section data-noprocess data-shortcode-slide
-      data-background-image="drawings.png"
+      data-background-color="white"
+      data-background-image="img/drawings.png"
       data-background-opacity="0.6"
       id="me"
       data-transition-speed="fast">
   
-<h2 id="guides-through-drawingshttpsche55erioguides"><a href="https://che55er.io/guides/">Guides through Drawings</a></h2>
+<h2 id="a-hrefhttpsche55erioguides-target_blankguides-through-drawingsa"><a href="https://che55er.io/guides/" target="_blank">Guides through Drawings</a></h2>
 </section><section>
 <h1 id="topics">Topics</h1>
-<ul>
-<li>🔍 Introduction</li>
-<li>📚 History</li>
-<li>🚀 Examples</li>
-</ul>
-</section><section>
-<p>Fantastic source 👇</p>
-<img src="write-the-docs.png" width="400">
+<p>🔍 Introduction   📚 Background   🚀 Examples</p>
+</section>
+
+  
+
+    <section><p>Fantastic source 👇</p>
+<p><a href="https://www.writethedocs.org/guide/docs-as-code/"><img src="img/write-the-docs.png" width="400"></a></p>
 </section><section>
 <h2 id="docs-as-code">Docs as Code?</h2>
 <p>Documentation as Code (Docs as Code) refers to a philosophy that you should be writing documentation with the <em>same tools as code</em>.</p>
+<p><small><em>Source: <a href="https://www.writethedocs.org/guide/docs-as-code/">Write the Docs</a></em></small></p>
 </section>
 <section data-noprocess>
-<h2>Docs as Code</h2>
-<p class="fragment fade-up">🐞 Issue Trackers</p>
-<p class="fragment fade-up">🎛 Version Control (git)</p>
-<p class="fragment fade-up">🔤 Plain Text Markup (Markdown, reStructuredText, Asciidoc)</p>
-<p class="fragment fade-up">💬 Code Reviews</p>
-<p class="fragment fade-up">✅ Automated Tests</p>
+  <h2>Docs as Code uses...</h2>
+  <small><em>Source: <a href="https://www.writethedocs.org/guide/docs-as-code/">Write the Docs</a></em></small>
+  <p class="fragment fade-up">🐞 Issue Trackers</p>
+  <p class="fragment fade-up">🌳 Version Control (git)</p>
+  <p class="fragment fade-up">🔤 Plain Text Markup<br /><small>(Markdown, reStructuredText, Asciidoc)</small></p>
+  <p class="fragment fade-up">💬 Code Reviews</p>
+  <p class="fragment fade-up">✅ Automated Tests</p>
 </section>
 </section><section>
-<h1 id="heading">📚</h1>
-<h2 id="2014-twitter">2014: Twitter</h2>
+<h2 id="-issue-trackers">🐞 Issue Trackers</h2>
+<p>Align tracking the work of documentation with code.
+<small>(have it live in the same queue)</small></p>
+</section>
+<section data-noprocess>
+  <h2>🌳 Version Control (git)</h2>
+  <p class="fragment fade-up">Enable docs and code in same changeset<br /><small>(like your tests)</small></p>
+  <p class="fragment fade-up">Enable concurrent development branches</p>
+  <p class="fragment fade-up"><small>🌈 Enable all the feature of version controls for documentation!</small></p>
+</section>
 </section><section>
-<h1 id="heading-1">📚</h1>
-<h2 id="2015-google">2015: Google</h2>
+<h2 id="-plain-text-markup">🔤 Plain Text Markup</h2>
+<p>Enable all the features of your code editors in documentation
+<small>(compare, find/replace, track in version control)</small></p>
+</section><section>
+<h2 id="-code-reviews">💬 Code Reviews</h2>
+<p>Enable discussions with code using the same toolchain
+<small>(line-by-line comments, suggestions they can apply, CODEOWNERS)</small></p>
+</section><section>
+<h2 id="-automated-tests">✅ Automated Tests</h2>
+<p>Enable static analysis tests on documentation
+<small>(status checks on pull requests)</small></p>
+</section>
+<section data-noprocess>
+  <h3>Creating the Culture of Documentation</h3>
+  <p>Twitter: 2014</p>
+  <img class="fragment" src="img/twitter-docs.png" width="300" /> <br />
+  <small class="fragment"><a href="https://youtu.be/EnB8GtPuauw">📽 Watch it!</a></small>
+</section>
+</section>
+<section data-noprocess>
+  <h3>Documentation, Disrupted</h3>
+  <h4>How Two Technical Writers Changed Google Engineering Culture</h4>
+  <p>Google: 2015</p>
+  <img class="fragment" src="img/google-docs-1.png" width="400" />
+  <img class="fragment" src="img/google-docs-2.png" width="400" /><br />
+  <small class="fragment"><a href="https://youtu.be/EnB8GtPuauw">📽 Watch it!</a></small>
+</section>
+</section>
+<section data-noprocess>
+  <h4>How we are solving internal technical documentation at Spotify </h4>
+  <p>Spotify: 2019</p>
+  <img class="fragment" src="img/spotify-docs-1.png" width="400" />
+  <img class="fragment" src="img/spotify-docs-2.png" width="400" /><br />
+  <small class="fragment"><a href="https://youtu.be/uFGCaZmA6d4">📽 Watch it!</a></small>
+</section>
+</section><section>
+<section data-background-iframe="https://backstage.io/blog/2020/09/08/announcing-tech-docs" data-background-interactive>
+</section>
+</section>
+<section data-noprocess>
+  <h2>Problematic Signals</h2>
+  <p class="fragment fade-up">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small></p>
+  <p class="fragment fade-up">📜 Documentation decay due to islands</p>
+  <p class="fragment fade-up">🔍 Searchability challenges</p>
+  <p class="fragment fade-up">🤷‍♂️ Different process for maintaining (vs. with code)</p>
+  <p class="fragment fade-up">😐 Lack of trust on the content</p>
+</section>
+</section>
+<section data-noprocess>
+  <section data-auto-animate>
+    <p id="prob">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
+    📜 Documentation decay due to islands<br />
+    🔍 Searchability challenges<br />
+    </p>
+  </section>
+  <section data-auto-animate>
+    <p id="prob" style="font-size: smaller; opacity: 0.2;">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
+    📜 Documentation decay due to islands<br />
+    🔍 Searchability challenges<br />
+    </p>
+    <p>🌎 A centralized build system for documentation that can enable content through a common convention
+    </p>
+  </section>
+</section>
+</section>
+<section data-noprocess>
+  <section data-auto-animate>
+    <p id="prob">🤷‍♂️ Different process for maintaining (vs. with code)</p>
+  </section>
+  <section data-auto-animate>
+    <p id="prob" style="font-size: smaller; opacity: 0.2;">🤷‍♂️ Different process for maintaining (vs. with code)</p>
+    <p>🧰 Enable documentation to exist closer to the code and toolchain</p>
+  </section>
+</section>
+</section>
+<section data-noprocess>
+  <section data-auto-animate>
+    <p id="prob">😐 Lack of trust on the content</p>
+  </section>
+  <section data-auto-animate>
+    <p id="prob" style="font-size: smaller; opacity: 0.2;">😐 Lack of trust on the content</p>
+    <p>🪄 Make it easy for anyone to contribute (help them along the way)</p>
+  </section>
+</section>
+</section><section>
+<p>But, not everyone has GitHub access&hellip;</p>
+<p class="fragment fade-up">or knows Markdown.<br />
+🤷‍♂️
+</p>
 </section><section>
 </section><section>
-<h1 id="heading-2">📚</h1>
-<h2 id="2019-spotify">2019: Spotify</h2>
 </section><section>
+</section>
+    <section></section><section>
 <section data-background-iframe="https://opensource.googleblog.com/2019/07/announcing-docsy-website-theme-for.html"
         background-opacity="0.6" data-background-interactive>
 </section>
+</section><section>
+<p>Examples!</p>
 </section>
 <section data-noprocess>
 <h2>GitHub Actions</h2>
@@ -117,16 +218,13 @@
 </section><section>
 </section>
 
-  
-
-
 </div>
       
 
     </div>
 
 <script type="application/json" id="reveal-hugo-site-params">null</script>
-<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"custom-theme.scss","custom_theme_compile":true,"highlight_theme":"agate"}</script>
+<script type="application/json" id="reveal-hugo-page-params">{"highlight_theme":"agate","theme":"black"}</script>
 
 <script src="/docs-as-code/reveal-js/reveal.js"></script>
 
