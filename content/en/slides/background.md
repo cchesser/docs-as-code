@@ -41,17 +41,20 @@ Align tracking the work of documentation with code.
 
 <section data-noprocess>
   <h2>🌳 Version Control (git)</h2>
-  <p class="fragment fade-up">Enable docs and code in same changeset<br /><small>(like your tests)</small></p>
+  <p class="fragment fade-up">Enable docs and code to live in same changeset<br /><small>(like your tests)</small></p>
   <p class="fragment fade-up">Enable concurrent development branches</p>
-  <p class="fragment fade-up"><small>🌈 Enable all the feature of version controls for documentation!</small></p>
+  <p class="fragment fade-up"><small>🌈 Enable all the features of version control for your documentation!</small></p>
 </section>
 
 ---
 
 ## 🔤 Plain Text Markup
 
-Enable all the features of your code editors in documentation
-<small>(compare, find/replace, track in version control)</small>
+Enable all the features of your code editors in documentation<br />
+<small>
+(compare, find/replace, track in version control)
+<p class="fragment fade-up">🌈 Many editors with preview mode for Markdown as you edit!</p>
+</small>
 
 ---
 
@@ -69,45 +72,46 @@ Enable static analysis tests on documentation
 
 ---
 
-<section data-noprocess>
-  <h3>Creating the Culture of Documentation</h3>
-  <p>Twitter: 2014</p>
-  <img class="fragment" src="img/twitter-docs.png" width="300" /> <br />
-  <small class="fragment"><a href="https://youtu.be/EnB8GtPuauw">📽 Watch it!</a></small>
-</section>
+{{< slide id="twitter" background-image="img/twitter-docs.png" background-opacity="0.8" transition-speed="fast" >}}
+
+<div class="fragment fade-out" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); padding: 10px;">
+<h2>Creating the Culture of Documentation</h2><br /></a>
+<a href="https://youtu.be/6y4eQ6gYwdU" target="_blank"><small>Write the Docs (Twitter, 2014)</small></a>
+</div>
 
 ---
 
-<section data-noprocess>
+{{< slide id="google" background-image="img/google-docs-1.png" background-opacity="0.8" transition-speed="fast" >}}
+
+<div class="fragment fade-out" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); padding: 10px; position: absolute; bottom: 0">
   <h3>Documentation, Disrupted</h3>
   <h4>How Two Technical Writers Changed Google Engineering Culture</h4>
-  <p>Google: 2015</p>
-  <img class="fragment" src="img/google-docs-1.png" width="400" />
-  <img class="fragment" src="img/google-docs-2.png" width="400" /><br />
-  <small class="fragment"><a href="https://youtu.be/EnB8GtPuauw">📽 Watch it!</a></small>
-</section>
+<a href="https://youtu.be/EnB8GtPuauw" target="_blank"><small>Write the Docs (Google, 2015)</small></a>
+</div>
 
 ---
 
-<section data-noprocess>
-  <h4>How we are solving internal technical documentation at Spotify </h4>
-  <p>Spotify: 2019</p>
-  <img class="fragment" src="img/spotify-docs-1.png" width="400" />
-  <img class="fragment" src="img/spotify-docs-2.png" width="400" /><br />
-  <small class="fragment"><a href="https://youtu.be/uFGCaZmA6d4">📽 Watch it!</a></small>
-</section>
+{{< slide id="spotify" background-image="img/spotify-docs-2.png" background-opacity="0.8" transition-speed="fast" >}}
+
+<div class="fragment fade-out" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); padding: 10px; position: absolute; bottom: 0">
+  <h3>How we are solving internal technical documentation at Spotify</h3>
+<a href="https://youtu.be/uFGCaZmA6d4" target="_blank"><small>Write the Docs (Spotify, 2019)</small></a>
+</div>
 
 ---
 
-<section data-background-iframe="https://backstage.io/blog/2020/09/08/announcing-tech-docs" data-background-interactive>
-</section>
+{{< slide id="spotify-techdocs" background-image="img/spotify-techdocs.png" background-opacity="0.8" transition-speed="fast" >}}
+
+<div class="fragment fade-in-then-out" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); padding: 10px; position: absolute; bottom: 0">
+<a href="https://backstage.io/blog/2020/09/08/announcing-tech-docs" target="_blank"><h3>Open-sourced September 2020!</h3></a>
+</div>
 
 ---
 
 <section data-noprocess>
   <h2>Problematic Signals</h2>
   <p class="fragment fade-up">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small></p>
-  <p class="fragment fade-up">📜 Documentation decay due to islands</p>
+  <p class="fragment fade-up">📜 Excessive documentation decay <br /><small>(possibly caused by islands)</small></p>
   <p class="fragment fade-up">🔍 Searchability challenges</p>
   <p class="fragment fade-up">🤷‍♂️ Different process for maintaining (vs. with code)</p>
   <p class="fragment fade-up">😐 Lack of trust on the content</p>
@@ -127,8 +131,7 @@ Enable static analysis tests on documentation
     📜 Documentation decay due to islands<br />
     🔍 Searchability challenges<br />
     </p>
-    <p>🌎 A centralized build system for documentation that can enable content through a common convention
-    </p>
+    <p>🌎 A centralized build system for documentation that can enable content through a common convention</p>
   </section>
 </section>
 
@@ -152,7 +155,8 @@ Enable static analysis tests on documentation
   </section>
   <section data-auto-animate>
     <p id="prob" style="font-size: smaller; opacity: 0.2;">😐 Lack of trust on the content</p>
-    <p>🪄 Make it easy for anyone to contribute (help them along the way)</p>
+    <p>🪄 Make it easy for anyone to contribute<br />
+    <small>help them along the way, like DocDays!</small></p>
   </section>
 </section>
 
@@ -164,6 +168,18 @@ But, not everyone has GitHub access...
 </p>
 
 ---
+
+## 🧩 
+
+Ensure approach aligns with strategy for expected toolchain access<br />
+<small>(GitHub Enterprise)</small>
+
+---
+
+## 🔤
+
+Illustrate through examples if you know text, <br />you can write Markdown.<br />
+<small>Majority of contributions are just textual content, not formatting</small>
 
 ---
 

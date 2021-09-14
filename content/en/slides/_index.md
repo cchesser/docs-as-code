@@ -2,14 +2,10 @@
 title: "Docs as Code"
 weight: 1
 toc_hide: true
-logo:
-  src: img/logo.png
 outputs:
 - Reveal
 reveal_hugo:
   theme: black
-  #custom_theme: "custom-theme.scss"
-  #custom_theme_compile: true
   highlight_theme: agate
 ---
 
@@ -50,7 +46,10 @@ reveal_hugo:
 
 {{< slide id="me" background-color="white" background-image="img/drawings.png" background-opacity="0.6" transition-speed="fast" >}}
 
-## <a href="https://che55er.io/guides/" target="_blank">Guides through Drawings</a>
+<div style="background: rgb(255, 255, 255); background: rgba(255, 255, 255, 0.7); color: black;">
+<h2><a href="https://che55er.io/guides/" target="_blank">Guides</a></h2>
+<small>through drawings</small>
+</div>
 
 ---
 
