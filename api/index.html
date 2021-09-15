@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.88.1" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta name="generator" content="Hugo 0.88.1" /><link rel="alternate" type="application/rss&#43;xml" href="https://chesser.github.io/docs-as-code/api/index.xml">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
 <link rel="shortcut icon" href="/docs-as-code/favicons/favicon.ico" >
@@ -17,19 +18,19 @@
 <link rel="icon" type="image/png" href="/docs-as-code/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/docs-as-code/favicons/android-192x192.png" sizes="192x192">
 
-<title>Docs as Code</title>
+<title>Swagger | Docs as Code</title>
 
 
-  <meta name="description" content="This site is intended to host some common references and introductory content on Docs as Code.">
-<meta property="og:title" content="Introduction" />
-<meta property="og:description" content="This site is intended to host some common references and introductory content on Docs as Code." />
+  <meta name="description" content="Simple example of using Swagger API">
+<meta property="og:title" content="Swagger" />
+<meta property="og:description" content="Simple example of using Swagger API" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://chesser.github.io/docs-as-code/" /><meta property="og:site_name" content="Docs as Code" />
+<meta property="og:url" content="https://chesser.github.io/docs-as-code/api/" /><meta property="og:site_name" content="Docs as Code" />
 
-<meta itemprop="name" content="Introduction">
-<meta itemprop="description" content="This site is intended to host some common references and introductory content on Docs as Code."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Introduction"/>
-<meta name="twitter:description" content="This site is intended to host some common references and introductory content on Docs as Code."/>
+<meta itemprop="name" content="Swagger">
+<meta itemprop="description" content="Simple example of using Swagger API"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Swagger"/>
+<meta name="twitter:description" content="Simple example of using Swagger API"/>
 
 
 
@@ -69,7 +70,7 @@ if (!doNotTrack) {
 
 
   </head>
-  <body class="td-home">
+  <body class="td-section">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -132,13 +133,13 @@ if (!doNotTrack) {
   <script>
     $(function() {
     $("#td-section-nav a").removeClass("active");
-    $("#td-section-nav #m-docs-as-code").addClass("active"); 
-    $("#td-section-nav #m-docs-as-code-li span").addClass("td-sidebar-nav-active-item"); 
-    $("#td-section-nav #m-docs-as-code").parents("li").addClass("active-path"); 
+    $("#td-section-nav #m-docs-as-codeapi").addClass("active"); 
+    $("#td-section-nav #m-docs-as-codeapi-li span").addClass("td-sidebar-nav-active-item"); 
+    $("#td-section-nav #m-docs-as-codeapi").parents("li").addClass("active-path"); 
     $("#td-section-nav li.active-path").addClass("show"); 
     $("#td-section-nav li.active-path").children("input").prop('checked', true);
-    $("#td-section-nav #m-docs-as-code-li").siblings("li").addClass("show");  
-    $("#td-section-nav #m-docs-as-code-li").children("ul").children("li").addClass("show");  
+    $("#td-section-nav #m-docs-as-codeapi-li").siblings("li").addClass("show");  
+    $("#td-section-nav #m-docs-as-codeapi-li").children("ul").children("li").addClass("show");  
     $("#td-sidebar-menu").toggleClass("d-none"); 
     });
   </script>
@@ -211,9 +212,9 @@ if (!doNotTrack) {
     
     
 
-    <a href="https://github.com/cchesser/docs-as-code/edit/main/content/en/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-    <a href="https://github.com/cchesser/docs-as-code/new/main/content/en/_index.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" target="_blank"><i class="fa fa-edit fa-fw"></i> Create child page</a>
-    <a href="https://github.com/cchesser/docs-as-code/issues/new?title=Introduction" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+    <a href="https://github.com/cchesser/docs-as-code/edit/main/content/en/api/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+    <a href="https://github.com/cchesser/docs-as-code/new/main/content/en/api/_index.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" target="_blank"><i class="fa fa-edit fa-fw"></i> Create child page</a>
+    <a href="https://github.com/cchesser/docs-as-code/issues/new?title=Swagger" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
     
 
   
@@ -223,19 +224,6 @@ if (!doNotTrack) {
 
             
 
-
-<div class="td-toc"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#what-is-docs-as-code">What is Docs as Code?</a></li>
-    <li><a href="#history">History</a>
-      <ul>
-        <li><a href="#2014-creating-the-culture-of-documentation">2014: Creating the Culture of Documentation</a></li>
-        <li><a href="#2015-documentation-disrupted-how-two-technical-writers-changed-google-engineering-culture">2015: Documentation, Disrupted: How Two Technical Writers Changed Google Engineering Culture</a></li>
-        <li><a href="#2019-how-we-are-solving-internal-technical-documentation-at-spotify">2019: How we are solving internal technical documentation at Spotify</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
 
 
 
@@ -267,8 +255,8 @@ if (!doNotTrack) {
             
             
 <div class="td-content">
-	<h1>Introduction</h1>
-  <div class="lead">This site is intended to host some common references and introductory content on Docs as Code.</div>
+	<h1>Swagger</h1>
+  <div class="lead">Simple example of using Swagger API</div>
 	<header class="article-meta">
 		
 		
@@ -283,46 +271,11 @@ if (!doNotTrack) {
 			
 		
 		
-			<p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp; 3 minute read &nbsp;</p>
+			<p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i>&nbsp; less than a minute &nbsp;</p>
 
 		
 	</header>
-	<h2 id="what-is-docs-as-code">What is Docs as Code?</h2>
-<p>As defined by <em><a href="https://www.writethedocs.org/guide/docs-as-code/">Write the Docs</a></em>:</p>
-<blockquote>
-<p>Documentation as Code (Docs as Code) refers to a philosophy that you should be writing documentation with the same tools as code:</p>
-<ul>
-<li>Issue Trackers</li>
-<li>Version Control (Git)</li>
-<li>Plain Text Markup (Markdown, reStructuredText, Asciidoc)</li>
-<li>Code Reviews</li>
-<li>Automated Tests</li>
-</ul>
-</blockquote>
-<h2 id="history">History</h2>
-<p>There are some valuable talks that cover approaches at different companies when dealing with Docs as Code. These talks helps share approaches with common motivators that support the Docs as Code approach.</p>
-<h3 id="2014-creating-the-culture-of-documentation">2014: Creating the Culture of Documentation</h3>
-<p>In this talk, they shared similar struggles of documentation being in different locations, not being well-maintained, and how they focused on the problem on documentation maintainability from the engineer’s perspective. They ended up making a convention of how they treat their docs like code to improve how documentation is maintained with code changesets. This resulted in making common documentation templates (Overview, Getting Started, etc) as part of every project, and having the build system publish this in one central location. They called this build platform: Docbird. They realized they had to change the culture on documentation, but that required listening to engineers to find out how to make this valuable to them.</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/6y4eQ6gYwdU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h3 id="2015-documentation-disrupted-how-two-technical-writers-changed-google-engineering-culture">2015: Documentation, Disrupted: How Two Technical Writers Changed Google Engineering Culture</h3>
-<p>The following year, Riona MacNamara from Google shared a talk at Write the Docs on how this Twitter talk influenced them in changing their culture. They found the same challenges with their documentation, where the problem wasn’t that there was enough documentation, but rather it was outdated and untrustworthy. They joked that they are the best in the world at indexing information, but that wasn’t true for their internal technical documentation. When people didn’t trust documentation, the authority was the code. This introduced productivity challenges, as different team members would have to discover more facts by going into codebases. Like code, documentation is both an asset and a liability to maintain. They then followed a similar approach to Twitter, where they had teams source their documentation in their codebase with a common convention (Markdown files in a “docs” directory). Content would get built in their central build system and it would be centrally referenced through a single portal. The name of their documentation platform was g3doc (you may see references to it when you <a href="https://github.com/search?q=g3doc+org%3Agoogle&amp;type=code">search their open-source projects</a>).</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/EnB8GtPuauw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h3 id="2019-how-we-are-solving-internal-technical-documentation-at-spotify">2019: How we are solving internal technical documentation at Spotify</h3>
-<p>Finally, this was further expanded with Spotify in 2019 that referenced what Google had applied. They called this <a href="https://backstage.io/blog/2020/09/08/announcing-tech-docs">TechDocs</a>, where docs are treated like code. Documentation templates and a central location that hosts this rendered content (Markdown generated into HTML) is searchable and better maintained since it lives close to the codebase and follows the same toolchain of their software development process (ex. GitHub). They have later shared this through <a href="https://backstage.io/">their open-source project call Backstage</a> (a CNCF sandbox project).</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/uFGCaZmA6d4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-
+	
         <div class="section-index">
     
     
@@ -337,17 +290,9 @@ if (!doNotTrack) {
             
             <div class="entry">
                 <h5>
-                    <a href="/docs-as-code/diagrams/">Diagrams</a>
+                    <a href="/docs-as-code/api/example/">Example API</a>
                 </h5>
-                <p>Allows you to visualize diagrams from text or code.</p>
-            </div>
-        
-            
-            <div class="entry">
-                <h5>
-                    <a href="/docs-as-code/index.json"></a>
-                </h5>
-                <p></p>
+                <p>Reference for the Pet Store API</p>
             </div>
         
     

@@ -117,7 +117,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-as-code/offline-search-index.ee6de9f3291960a04fb7fd1d49741c88.json"
+  data-offline-search-index-json-src="/docs-as-code/offline-search-index.155eaf561b2875428aec0691f273a421.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -131,7 +131,21 @@ if (!doNotTrack) {
         <div class="row flex-xl-nowrap">
           <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             
-<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <script>
+    $(function() {
+    $("#td-section-nav a").removeClass("active");
+    $("#td-section-nav #m-docs-as-codecategories").addClass("active"); 
+    $("#td-section-nav #m-docs-as-codecategories-li span").addClass("td-sidebar-nav-active-item"); 
+    $("#td-section-nav #m-docs-as-codecategories").parents("li").addClass("active-path"); 
+    $("#td-section-nav li.active-path").addClass("show"); 
+    $("#td-section-nav li.active-path").children("input").prop('checked', true);
+    $("#td-section-nav #m-docs-as-codecategories-li").siblings("li").addClass("show");  
+    $("#td-section-nav #m-docs-as-codecategories-li").children("ul").children("li").addClass("show");  
+    $("#td-sidebar-menu").toggleClass("d-none"); 
+    });
+  </script>
+  
+<div id="td-sidebar-menu" class="td-sidebar__inner d-none">
   <form class="td-sidebar__search d-flex align-items-center">
     
 
@@ -144,7 +158,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-as-code/offline-search-index.ee6de9f3291960a04fb7fd1d49741c88.json"
+  data-offline-search-index-json-src="/docs-as-code/offline-search-index.155eaf561b2875428aec0691f273a421.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -155,10 +169,17 @@ if (!doNotTrack) {
   </form>
   <nav class="collapse td-sidebar-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-as-code-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-as-code-li">
   <a href="/docs-as-code/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs-as-code"><span class="">Introduction</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-as-codediagrams-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-as-codeapi-li">
+  <a href="/docs-as-code/api/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docs-as-codeapi"><span class="">Swagger</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-as-codeapiexample-li">
+  <a href="/docs-as-code/api/example/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docs-as-codeapiexample"><span class="">Example API</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-as-codediagrams-li">
   <a href="/docs-as-code/diagrams/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docs-as-codediagrams"><span class="">Diagrams</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-as-codeindexjson-li">
   <a href="/docs-as-code/index.json" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docs-as-codeindexjson"><span class=""></span></a>
@@ -168,6 +189,7 @@ if (!doNotTrack) {
     </ul>
   </nav>
 </div>
+
 
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
@@ -229,20 +251,7 @@ if (!doNotTrack) {
             
   
 
-            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
-	<ol class="breadcrumb spb-1">
-		
-
-
-
-
-<li class="breadcrumb-item active" aria-current="page">
-	<a href="https://chesser.github.io/docs-as-code/categories/">Categories</a>
-</li>
-
-	</ol>
-</nav	>
-
+            
             
 <div class="td-content">
 	<h1>Categories</h1>

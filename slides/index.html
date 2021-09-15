@@ -63,38 +63,38 @@
 </div>
 </section><section>
 <h1 id="topics">Topics</h1>
-<p>🔍 Introduction   📚 Background   🚀 Examples</p>
+<p><a href="#/intro">🔍 Introduction</a>   <a href="#/background">📚 Background</a>   <a href="#/examples">🚀 Examples</a></p>
 </section>
 
   
 
-    <section><p>Fantastic source 👇</p>
+    
+<section data-noprocess data-shortcode-slide
+      id="intro">
+  
+<p>Fantastic resource 👇</p>
 <p><a href="https://www.writethedocs.org/guide/docs-as-code/"><img src="img/write-the-docs.png" width="400"></a></p>
 </section><section>
 <h2 id="docs-as-code">Docs as Code?</h2>
 <p>Documentation as Code (Docs as Code) refers to a philosophy that you should be writing documentation with the <em>same tools as code</em>.</p>
 <p><small><em>Source: <a href="https://www.writethedocs.org/guide/docs-as-code/">Write the Docs</a></em></small></p>
-</section>
-<section data-noprocess>
-  <h2>Docs as Code uses...</h2>
-  <small><em>Source: <a href="https://www.writethedocs.org/guide/docs-as-code/">Write the Docs</a></em></small>
-  <p class="fragment fade-up">🐞 Issue Trackers</p>
-  <p class="fragment fade-up">🌳 Version Control (git)</p>
-  <p class="fragment fade-up">🔤 Plain Text Markup<br /><small>(Markdown, reStructuredText, Asciidoc)</small></p>
-  <p class="fragment fade-up">💬 Code Reviews</p>
-  <p class="fragment fade-up">✅ Automated Tests</p>
-</section>
+</section><section>
+<h2>Docs as Code uses...</h2>
+<small><em>Source: <a href="https://www.writethedocs.org/guide/docs-as-code/">Write the Docs</a></em></small>
+<p class="fragment fade-up">🐞 Issue Trackers</p>
+<p class="fragment fade-up">🌳 Version Control (git)</p>
+<p class="fragment fade-up">🔤 Plain Text Markup<br /><small>(Markdown, reStructuredText, Asciidoc)</small></p>
+<p class="fragment fade-up">💬 Code Reviews</p>
+<p class="fragment fade-up">✅ Automated Tests</p>
 </section><section>
 <h2 id="-issue-trackers">🐞 Issue Trackers</h2>
 <p>Align tracking the work of documentation with code.
 <small>(have it live in the same queue)</small></p>
-</section>
-<section data-noprocess>
-  <h2>🌳 Version Control (git)</h2>
-  <p class="fragment fade-up">Enable docs and code to live in same changeset<br /><small>(like your tests)</small></p>
-  <p class="fragment fade-up">Enable concurrent development branches</p>
-  <p class="fragment fade-up"><small>🌈 Enable all the features of version control for your documentation!</small></p>
-</section>
+</section><section>
+<h2>🌳 Version Control (git)</h2>
+<p class="fragment fade-up">Enable docs and code to live in same changeset<br /><small>(like your tests)</small></p>
+<p class="fragment fade-up">Enable concurrent development branches</p>
+<p class="fragment fade-up"><small>🌈 Enable all the features of version control for your documentation!</small></p>
 </section><section>
 <h2 id="-plain-text-markup">🔤 Plain Text Markup</h2>
 <p>Enable all the features of your code editors in documentation<br />
@@ -115,7 +115,7 @@
 <section data-noprocess data-shortcode-slide
       data-background-image="img/twitter-docs.png"
       data-background-opacity="0.8"
-      id="twitter"
+      id="background"
       data-transition-speed="fast">
   
 <div class="fragment fade-out" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); padding: 10px;">
@@ -158,40 +158,34 @@
 <div class="fragment fade-in-then-out" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); padding: 10px; position: absolute; bottom: 0">
 <a href="https://backstage.io/blog/2020/09/08/announcing-tech-docs" target="_blank"><h3>Open-sourced September 2020!</h3></a>
 </div>
+</section><section>
+<h2>Problematic Signals</h2>
+<p class="fragment fade-up">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small></p>
+<p class="fragment fade-up">📜 Excessive documentation decay <br /><small>(possibly caused by  islands)</small></p>
+<p class="fragment fade-up">🔍 Searchability challenges</p>
+<p class="fragment fade-up">🤷‍♂️ Different process for maintaining (vs. with code)</p>
+<p class="fragment fade-up">😐 Lack of trust on the content</p>
+</section><section>
+<section data-auto-animate>
+  <p id="prob">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
+  📜 Documentation decay due to islands<br />
+  🔍 Searchability challenges<br />
+  </p>
 </section>
-<section data-noprocess>
-  <h2>Problematic Signals</h2>
-  <p class="fragment fade-up">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small></p>
-  <p class="fragment fade-up">📜 Excessive documentation decay <br /><small>(possibly caused by islands)</small></p>
-  <p class="fragment fade-up">🔍 Searchability challenges</p>
-  <p class="fragment fade-up">🤷‍♂️ Different process for maintaining (vs. with code)</p>
-  <p class="fragment fade-up">😐 Lack of trust on the content</p>
+<section data-auto-animate>
+  <p id="prob" style="font-size: smaller; opacity: 0.2;">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
+  📜 Documentation decay due to islands<br />
+  🔍 Searchability challenges<br />
+  </p>
+  <p>🌎 A centralized build system for documentation that can enable content through a common convention</p>
 </section>
+</section><section>
+<section data-auto-animate>
+  <p id="prob">🤷‍♂️ Different process for maintaining (vs. with code)</p>
 </section>
-<section data-noprocess>
-  <section data-auto-animate>
-    <p id="prob">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
-    📜 Documentation decay due to islands<br />
-    🔍 Searchability challenges<br />
-    </p>
-  </section>
-  <section data-auto-animate>
-    <p id="prob" style="font-size: smaller; opacity: 0.2;">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
-    📜 Documentation decay due to islands<br />
-    🔍 Searchability challenges<br />
-    </p>
-    <p>🌎 A centralized build system for documentation that can enable content through a common convention</p>
-  </section>
-</section>
-</section>
-<section data-noprocess>
-  <section data-auto-animate>
-    <p id="prob">🤷‍♂️ Different process for maintaining (vs. with code)</p>
-  </section>
-  <section data-auto-animate>
-    <p id="prob" style="font-size: smaller; opacity: 0.2;">🤷‍♂️ Different process for maintaining (vs. with code)</p>
-    <p>🧰 Enable documentation to exist closer to the code and toolchain</p>
-  </section>
+<section data-auto-animate>
+  <p id="prob" style="font-size: smaller; opacity: 0.2;">🤷‍♂️ Different process for maintaining (vs. with code)</p>
+  <p>🧰 Enable documentation to exist closer to the code and toolchain</p>
 </section>
 </section>
 <section data-noprocess>
@@ -215,45 +209,167 @@
 <small>(GitHub Enterprise)</small></p>
 </section><section>
 <h2 id="heading-1">🔤</h2>
-<p>Illustrate through examples if you know text, <br />you can write Markdown.<br />
-<small>Majority of contributions are just textual content, not formatting</small></p>
-</section><section>
-</section><section>
+<p>Illustrate through examples that if <u>you know text</u>, <br />you <u>can write Markdown</u><br />
+<small>Majority of contributions = textual content, ≠ formatting</small></p>
 </section>
-    <section></section><section>
-<section data-background-iframe="https://opensource.googleblog.com/2019/07/announcing-docsy-website-theme-for.html"
-        background-opacity="0.6" data-background-interactive>
-</section>
+    
+<section data-noprocess data-shortcode-slide
+      id="examples">
+  
+<h2 id="heading">🚀</h2>
+<h2 id="examples">Examples</h2>
+<p class="fragment fade-up"><strong>🔤 Markdown</strong>: Authoring</p>
+<p class="fragment fade-up"><strong>⚙️ Hugo</strong>: Generating</p>
+<p class="fragment fade-up"><strong>👔 Docsy</strong>: Theming</p>
+<p class="fragment fade-up"><strong>⚡️ GitHub Actions</strong>: Building</p>
+<p class="fragment fade-up"><strong>📑 GitHub Pages</strong>: Serving</p>
 </section><section>
-<p>Examples!</p>
+<h2 id="heading-1">🔤</h2>
+<h2 id="markdown">Markdown</h2>
+<p>Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by John Gruber in 2004, Markdown is now one of the world’s most popular markup languages.</p>
+<p><small>Source: <a href="https://www.markdownguide.org/">The Markdown Guide</a></small></p>
+</section><section>
+<h2 id="editing">Editing</h2>
+<p><img src="img/markdown-preview.png" alt=""></p>
+</section><section>
+<p>Great resource 👇</p>
+<p><a href="https://www.markdownguide.org/"><img src="img/markdown-guide.png"></a></p>
+</section><section>
+<p><img src="img/hugo-logo.png" alt=""></p>
+<p>The world’s fastest framework for building websites</p>
+<p><a href="https://gohugo.io/">https://gohugo.io/</a></p>
+</section><section>
+<h2>Hugo Features</h2>
+<p class="fragment fade-up">🦄 Shortcodes <br />
+  <small>Powerful way to extend beyond Markdown with reusable code blocks</small>
+</p>
+<p class="fragment fade-up">🪴 Multiple Formats <br />
+  <small>Hugo allows you to output your content in multiple formats...like this presentation</small>
+</p>
+<p class="fragment fade-up">🦥 Flexible <br />
+  <small>Build different types of content (menus, diagrams) to make a rich website out of Markdown</small>
+</p>
+<p class="fragment fade-up">⚡️ Speed <br />
+  <small>At < 1 ms per page, the average site builds in less than a second</small>
+</p>
 </section>
-<section data-noprocess>
-<h2>GitHub Actions</h2>
-<pre><code data-line-numbers="3-5|8-10|13-15">
-<table>
-  <tr>
-    <td>Apples</td>
-    <td>$1</td>
-    <td>7</td>
-  </tr>
-  <tr>
-    <td>Oranges</td>
-    <td>$2</td>
-    <td>18</td>
-  </tr>
-  <tr>
-    <td>Kiwi</td>
-    <td>$3</td>
-    <td>1</td>
-  </tr>
-</table>
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/docsy-announced.png"
+      data-background-opacity="0.8"
+      id="docsy-announced"
+      data-transition-speed="fast">
+  
+<div class="fragment fade-in-then-out" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+<a href="https://opensource.googleblog.com/2019/07/announcing-docsy-website-theme-for.html" target="_blank"><h3>Open-sourced July 2019!</h3></a>
+</div>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/docsy-example.png"
+      data-background-opacity="0.8"
+      id="docsy-example"
+      data-transition-speed="fast">
+  
+<div style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+A <a href="https://opensource.googleblog.com/2019/07/announcing-docsy-website-theme-for.html" target="_blank">Hugo theme</a> for creating great technical documentation sites
+</div>
+</section><section>
+<h2 id="heading-2">👔</h2>
+<h2 id="docsy-examples">Docsy Examples</h2>
+<div class="r-stack">
+  <img class="fragment fade-up" src="img/docsy-grpc.png" />
+  <img class="fragment fade-up" src="img/docsy-spinnaker.png" />
+  <img class="fragment fade-up" src="img/docsy-kubernetes.png" />
+</div>
+</section><section>
+<h2 id="heading-3">🦄</h2>
+<h2 id="shortcodes">Shortcodes</h2>
+<p>Generate API documentation from your OpenAPI (Swagger) specifications.</p>
+<pre><code style="text-align: center">{{< swaggerui src="/openapi/petstore.yaml" >}}
 </code></pre>
-</section>
 </section><section>
+<h2 id="heading-4">🧜‍♀️</h2>
+<h2 id="diagrams-mermaid">Diagrams: Mermaid</h2>
+<pre><code data-line-numbers="2|3|4-6">
+```mermaid
+graph LR
+  Start --> Need{"Do I need diagrams"}
+  Need -- No --> Off["Set params.mermaid.enable = false"]
+  Need -- Yes --> HaveFun["Great!  Enjoy!"]
+```
+</code></pre>
+<p><img style="background-color: white" src="img/mermaid-example.svg" /></p>
+</section><section>
+<h2 id="github-actions">GitHub Actions</h2>
+<p>Build your docs!</p>
+<p><small>Include in <code>.github/workflows/gh-pages.yaml</code> file.</small></p>
+<pre><code data-line-numbers="3-7|46-51">name: github pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          # Can pin to a specific version if needed, ex:
+          # hugo-version: '0.79.1'
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
+      - run: hugo
+        env:
+          HUGO_ENV: production
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages</code></pre>
+</section><section>
+<h2 id="heading-5">📑</h2>
+<h2 id="github-pages">GitHub Pages</h2>
+<p class="fragment fade-up">⚒️ Build and test your docs on pull requests</p>
+<p class="fragment fade-up">🧆 Generate and store static content for serving</p>
+</section><section>
+<h2 id="heading-6">🧪</h2>
+<h2 id="try-it-out">Try it out!</h2>
+<p>Try out <a href="/docs-as-code" target="_self" >the example site</a> by:</p>
+<p class="fragment fade-up">✍️ Use <em>Edit this Page</em> to make a change via a PR</p>
+<p class="fragment fade-up">⚙️ See build process on pull request and preview</p>
 </section>
     <section><h2 id="recap">Recap</h2>
 <p class="fragment fade-up">📓 Definition and approach</p>
-<p class="fragment fade-up">📚 Background and approaches of others</p>
+<p class="fragment fade-up">📚 Background of how others have approached it</p>
 <p class="fragment fade-up">❤️ Benefits and how it lends to common problems in documentation</p>
 <p class="fragment fade-up">🚀 Examples with: Markdown, Hugo, Docsy, GitHub, GitHub Actions, GitHub Pages</p>
 </section><section>

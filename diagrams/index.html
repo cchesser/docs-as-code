@@ -20,24 +20,21 @@
 <title>Diagrams | Docs as Code</title>
 
 
-  
-  <meta name="description" content="ThoughtWorks Tech Radar
-https://www.thoughtworks.com/radar/techniques/diagrams-as-code
-">
+  <meta name="description" content="Allows you to visualize diagrams from text or code.">
 <meta property="og:title" content="Diagrams" />
-<meta property="og:description" content="ThoughtWorks Tech Radar https://www.thoughtworks.com/radar/techniques/diagrams-as-code" />
+<meta property="og:description" content="Allows you to visualize diagrams from text or code." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chesser.github.io/docs-as-code/diagrams/" /><meta property="article:section" content="" />
 
-<meta property="article:modified_time" content="2021-09-12T09:48:34-05:00" /><meta property="og:site_name" content="Docs as Code" />
+<meta property="article:modified_time" content="2021-09-14T23:27:31-05:00" /><meta property="og:site_name" content="Docs as Code" />
 
 <meta itemprop="name" content="Diagrams">
-<meta itemprop="description" content="ThoughtWorks Tech Radar https://www.thoughtworks.com/radar/techniques/diagrams-as-code">
-<meta itemprop="dateModified" content="2021-09-12T09:48:34-05:00" />
-<meta itemprop="wordCount" content="4">
+<meta itemprop="description" content="Allows you to visualize diagrams from text or code.">
+<meta itemprop="dateModified" content="2021-09-14T23:27:31-05:00" />
+<meta itemprop="wordCount" content="64">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Diagrams"/>
-<meta name="twitter:description" content="ThoughtWorks Tech Radar https://www.thoughtworks.com/radar/techniques/diagrams-as-code"/>
+<meta name="twitter:description" content="Allows you to visualize diagrams from text or code."/>
 
 
 
@@ -123,7 +120,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-as-code/offline-search-index.ee6de9f3291960a04fb7fd1d49741c88.json"
+  data-offline-search-index-json-src="/docs-as-code/offline-search-index.155eaf561b2875428aec0691f273a421.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -137,7 +134,21 @@ if (!doNotTrack) {
         <div class="row flex-xl-nowrap">
           <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             
-<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <script>
+    $(function() {
+    $("#td-section-nav a").removeClass("active");
+    $("#td-section-nav #m-docs-as-codediagrams").addClass("active"); 
+    $("#td-section-nav #m-docs-as-codediagrams-li span").addClass("td-sidebar-nav-active-item"); 
+    $("#td-section-nav #m-docs-as-codediagrams").parents("li").addClass("active-path"); 
+    $("#td-section-nav li.active-path").addClass("show"); 
+    $("#td-section-nav li.active-path").children("input").prop('checked', true);
+    $("#td-section-nav #m-docs-as-codediagrams-li").siblings("li").addClass("show");  
+    $("#td-section-nav #m-docs-as-codediagrams-li").children("ul").children("li").addClass("show");  
+    $("#td-sidebar-menu").toggleClass("d-none"); 
+    });
+  </script>
+  
+<div id="td-sidebar-menu" class="td-sidebar__inner d-none">
   <form class="td-sidebar__search d-flex align-items-center">
     
 
@@ -150,7 +161,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-as-code/offline-search-index.ee6de9f3291960a04fb7fd1d49741c88.json"
+  data-offline-search-index-json-src="/docs-as-code/offline-search-index.155eaf561b2875428aec0691f273a421.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -161,11 +172,18 @@ if (!doNotTrack) {
   </form>
   <nav class="collapse td-sidebar-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-as-code-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-as-code-li">
   <a href="/docs-as-code/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs-as-code"><span class="">Introduction</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docs-as-codediagrams-li">
-  <a href="/docs-as-code/diagrams/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docs-as-codediagrams"><span class="td-sidebar-nav-active-item">Diagrams</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-as-codeapi-li">
+  <a href="/docs-as-code/api/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docs-as-codeapi"><span class="">Swagger</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-as-codeapiexample-li">
+  <a href="/docs-as-code/api/example/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docs-as-codeapiexample"><span class="">Example API</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-as-codediagrams-li">
+  <a href="/docs-as-code/diagrams/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docs-as-codediagrams"><span class="">Diagrams</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-as-codeindexjson-li">
   <a href="/docs-as-code/index.json" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docs-as-codeindexjson"><span class=""></span></a>
 </li>
@@ -174,6 +192,7 @@ if (!doNotTrack) {
     </ul>
   </nav>
 </div>
+
 
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
@@ -237,24 +256,11 @@ if (!doNotTrack) {
             
   
 
-            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
-	<ol class="breadcrumb spb-1">
-		
-
-
-
-
-<li class="breadcrumb-item active" aria-current="page">
-	<a href="https://chesser.github.io/docs-as-code/diagrams/">Diagrams</a>
-</li>
-
-	</ol>
-</nav	>
-
+            
             
 <div class="td-content">
 	<h1>Diagrams</h1>
-	
+	<div class="lead">Allows you to visualize diagrams from text or code.</div>
 	<header class="article-meta">
 		
 		
@@ -273,8 +279,13 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<h2 id="thoughtworks-tech-radar">ThoughtWorks Tech Radar</h2>
-<p><a href="https://www.thoughtworks.com/radar/techniques/diagrams-as-code">https://www.thoughtworks.com/radar/techniques/diagrams-as-code</a></p>
+	<h2 id="projects">Projects</h2>
+<p>Here are some projects that can enable you to leverage this approach in your projects:</p>
+<ul>
+<li><a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>: Mermaid lets you create diagrams and visualizations using text and code.</li>
+<li><a href="https://diagrams.mingrammer.com/">Diagrams as Code</a>: Diagrams lets you draw the cloud system architecture in Python code.</li>
+<li><a href="https://structurizr.com/help/dsl">Structurizr</a>: Allows you to create multiple diagrams based upon the <a href="https://c4model.com/">C4 model</a>, in multiple output formats, from a single DSL source file.</li>
+</ul>
 
 	
 		<style>
@@ -343,8 +354,8 @@ if (!doNotTrack) {
 	<div class="text-muted mt-5 pt-3 border-top">
 
     Last modified
-    September 12, 2021
-    : <a  href="https://github.com/cchesser/docs-as-code/commit/0c770b54b430c911bc625c0b10d84945700fad19">Initial creation (0c770b5)</a>
+    September 14, 2021
+    : <a  href="https://github.com/cchesser/docs-as-code/commit/c21f6c13722a9e0ed0c527f3cd76bd1585c81356">Adding images / API example / slide updates (c21f6c1)</a>
 
 </div>
 
