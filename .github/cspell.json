@@ -1,0 +1,37 @@
+{
+  // Version of the setting file.  Always 0.2
+  "version": "0.2",
+  // language - current active spelling language
+  "language": "en",
+  // words - list of words to be always considered correct
+  "words": [
+      "changesets",
+      "Docbird",
+      "Riona",
+      "Namara",
+      "codebases",
+      "Puauw",
+      "CNCF",
+      "swaggerui",
+      "openapi",
+      "petstore",
+      "Structurizr",
+      "Chesser",
+      "noprocess",
+      "rgba",
+      "CODEOWNERS",
+      "techdocs",
+      "Searchability",
+      "Docsy",
+      "Gruber",
+      "Shortcodes",
+      "docsy",
+      "grpc",
+      "kubernetes",
+      "Lastmod",
+      "peaceiris"
+  ],
+  "ignoreRegExpList": [
+    "\\{\\{< .* >\\}\\}" // Ignore Hugo shortcode contents
+  ]
+}
