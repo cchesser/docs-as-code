@@ -9,7 +9,7 @@ outputs:
 ## Recap
 
 <p class="fragment fade-up">📓 Definition and approach</p>
-<p class="fragment fade-up">📚 Background and approaches of others</p>
+<p class="fragment fade-up">📚 Background of how others have approached it</p>
 <p class="fragment fade-up">❤️ Benefits and how it lends to common problems in documentation</p>
 <p class="fragment fade-up">🚀 Examples with: Markdown, Hugo, Docsy, GitHub, GitHub Actions, GitHub Pages</p>
 

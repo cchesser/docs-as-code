@@ -6,7 +6,9 @@ outputs:
 - Reveal
 ---
 
-Fantastic source 👇
+{{< slide id="intro" >}}
+
+Fantastic resource 👇
 
 <a href="https://www.writethedocs.org/guide/docs-as-code/"><img src="img/write-the-docs.png" width="400"></a>
 
@@ -20,15 +22,13 @@ Documentation as Code (Docs as Code) refers to a philosophy that you should be w
 
 ---
 
-<section data-noprocess>
-  <h2>Docs as Code uses...</h2>
-  <small><em>Source: <a href="https://www.writethedocs.org/guide/docs-as-code/">Write the Docs</a></em></small>
-  <p class="fragment fade-up">🐞 Issue Trackers</p>
-  <p class="fragment fade-up">🌳 Version Control (git)</p>
-  <p class="fragment fade-up">🔤 Plain Text Markup<br /><small>(Markdown, reStructuredText, Asciidoc)</small></p>
-  <p class="fragment fade-up">💬 Code Reviews</p>
-  <p class="fragment fade-up">✅ Automated Tests</p>
-</section>
+<h2>Docs as Code uses...</h2>
+<small><em>Source: <a href="https://www.writethedocs.org/guide/docs-as-code/">Write the Docs</a></em></small>
+<p class="fragment fade-up">🐞 Issue Trackers</p>
+<p class="fragment fade-up">🌳 Version Control (git)</p>
+<p class="fragment fade-up">🔤 Plain Text Markup<br /><small>(Markdown, reStructuredText, Asciidoc)</small></p>
+<p class="fragment fade-up">💬 Code Reviews</p>
+<p class="fragment fade-up">✅ Automated Tests</p>
 
 ---
 
@@ -39,12 +39,10 @@ Align tracking the work of documentation with code.
 
 ---
 
-<section data-noprocess>
-  <h2>🌳 Version Control (git)</h2>
-  <p class="fragment fade-up">Enable docs and code to live in same changeset<br /><small>(like your tests)</small></p>
-  <p class="fragment fade-up">Enable concurrent development branches</p>
-  <p class="fragment fade-up"><small>🌈 Enable all the features of version control for your documentation!</small></p>
-</section>
+<h2>🌳 Version Control (git)</h2>
+<p class="fragment fade-up">Enable docs and code to live in same changeset<br /><small>(like your tests)</small></p>
+<p class="fragment fade-up">Enable concurrent development branches</p>
+<p class="fragment fade-up"><small>🌈 Enable all the features of version control for your documentation!</small></p>
 
 ---
 
@@ -72,7 +70,7 @@ Enable static analysis tests on documentation
 
 ---
 
-{{< slide id="twitter" background-image="img/twitter-docs.png" background-opacity="0.8" transition-speed="fast" >}}
+{{< slide id="background" background-image="img/twitter-docs.png" background-opacity="0.8" transition-speed="fast" >}}
 
 <div class="fragment fade-out" style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8); padding: 10px;">
 <h2>Creating the Culture of Documentation</h2><br /></a>
@@ -108,43 +106,37 @@ Enable static analysis tests on documentation
 
 ---
 
-<section data-noprocess>
-  <h2>Problematic Signals</h2>
-  <p class="fragment fade-up">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small></p>
-  <p class="fragment fade-up">📜 Excessive documentation decay <br /><small>(possibly caused by islands)</small></p>
-  <p class="fragment fade-up">🔍 Searchability challenges</p>
-  <p class="fragment fade-up">🤷‍♂️ Different process for maintaining (vs. with code)</p>
-  <p class="fragment fade-up">😐 Lack of trust on the content</p>
+<h2>Problematic Signals</h2>
+<p class="fragment fade-up">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small></p>
+<p class="fragment fade-up">📜 Excessive documentation decay <br /><small>(possibly caused by  islands)</small></p>
+<p class="fragment fade-up">🔍 Searchability challenges</p>
+<p class="fragment fade-up">🤷‍♂️ Different process for maintaining (vs. with code)</p>
+<p class="fragment fade-up">😐 Lack of trust on the content</p>
+
+---
+
+<section data-auto-animate>
+  <p id="prob">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
+  📜 Documentation decay due to islands<br />
+  🔍 Searchability challenges<br />
+  </p>
+</section>
+<section data-auto-animate>
+  <p id="prob" style="font-size: smaller; opacity: 0.2;">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
+  📜 Documentation decay due to islands<br />
+  🔍 Searchability challenges<br />
+  </p>
+  <p>🌎 A centralized build system for documentation that can enable content through a common convention</p>
 </section>
 
 ---
 
-<section data-noprocess>
-  <section data-auto-animate>
-    <p id="prob">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
-    📜 Documentation decay due to islands<br />
-    🔍 Searchability challenges<br />
-    </p>
-  </section>
-  <section data-auto-animate>
-    <p id="prob" style="font-size: smaller; opacity: 0.2;">🏝 Islands of documentation<br /><small>(MediaWiki, Confluence, Office 365, READMEs, GitHub Pages)</small><br />
-    📜 Documentation decay due to islands<br />
-    🔍 Searchability challenges<br />
-    </p>
-    <p>🌎 A centralized build system for documentation that can enable content through a common convention</p>
-  </section>
+<section data-auto-animate>
+  <p id="prob">🤷‍♂️ Different process for maintaining (vs. with code)</p>
 </section>
-
----
-
-<section data-noprocess>
-  <section data-auto-animate>
-    <p id="prob">🤷‍♂️ Different process for maintaining (vs. with code)</p>
-  </section>
-  <section data-auto-animate>
-    <p id="prob" style="font-size: smaller; opacity: 0.2;">🤷‍♂️ Different process for maintaining (vs. with code)</p>
-    <p>🧰 Enable documentation to exist closer to the code and toolchain</p>
-  </section>
+<section data-auto-animate>
+  <p id="prob" style="font-size: smaller; opacity: 0.2;">🤷‍♂️ Different process for maintaining (vs. with code)</p>
+  <p>🧰 Enable documentation to exist closer to the code and toolchain</p>
 </section>
 
 ---
@@ -178,10 +170,5 @@ Ensure approach aligns with strategy for expected toolchain access<br />
 
 ## 🔤
 
-Illustrate through examples if you know text, <br />you can write Markdown.<br />
-<small>Majority of contributions are just textual content, not formatting</small>
-
----
-
-
----
+Illustrate through examples that if <u>you know text</u>, <br />you <u>can write Markdown</u><br />
+<small>Majority of contributions = textual content, ≠ formatting</small>

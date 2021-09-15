@@ -1,6 +1,7 @@
 ---
 title: "Introduction"
 weight: 10
+description: This site is intended to host some common references and introductory content on Docs as Code.
 cascade:
 - type: "reveal"
   _target:
@@ -9,8 +10,6 @@ cascade:
   _target:
     path: "/**"
 ---
-
-This site is intended to host some common references and introductory content on _Docs as Code_.
 
 ## What is Docs as Code?
 

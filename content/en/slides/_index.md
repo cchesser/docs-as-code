@@ -55,4 +55,4 @@ reveal_hugo:
 
 # Topics
 
-🔍 Introduction &nbsp; 📚 Background &nbsp; 🚀 Examples 
+[🔍 Introduction](#/intro) &nbsp; [📚 Background](#/background) &nbsp; [🚀 Examples](#/examples)
