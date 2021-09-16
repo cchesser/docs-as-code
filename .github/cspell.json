@@ -30,7 +30,9 @@
     "lastmod",
     "peaceiris",
     "mostlydocs",
-    "markmap"
+    "markmap",
+    "tshirt",
+    "mindmap"
   ],
   "ignoreRegExpList": [
     "\\{\\{< .* >\\}\\}" // Ignore Hugo shortcode contents
