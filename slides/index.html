@@ -356,15 +356,46 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages</code></pre>
 </section><section>
+<h2 id="github-actions-1">GitHub Actions</h2>
+<p>Test your docs (spellcheck)!</p>
+<p><small>Include in <code>.github/workflows/validation.yaml</code> file.</small></p>
+<pre><code data-line-numbers="3-7|20">name: validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  spell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Check out the code
+      - uses: actions/setup-node@v1
+        name: Run spell check
+        with:
+          node-version: "12"
+      - run: npm install -g cspell
+      - run: cspell lint --config .github/cspell.json "content/**/*.md"</code></pre>
+</section><section>
+<h2 id="github-actions-2">GitHub Actions</h2>
+<p>✅ Enforce your tests in pull requests</p>
+<div class="r-stack">
+<img class="fragment" src="img/pr-fail-1.png" />
+<img class="fragment" src="img/pr-fail-2.png" />
+</div>
+</section><section>
 <h2 id="heading-5">📑</h2>
 <h2 id="github-pages">GitHub Pages</h2>
-<p class="fragment fade-up">⚒️ Build and test your docs on pull requests</p>
+<p class="fragment fade-up">⚒️ GitHub Actions build content on PRs and main</p>
 <p class="fragment fade-up">🧆 Generate and store static content for serving</p>
 </section><section>
 <h2 id="heading-6">🧪</h2>
 <h2 id="try-it-out">Try it out!</h2>
-<p>Try out <a href="/docs-as-code" target="_self" >the example site</a> by:</p>
-<p class="fragment fade-up">✍️ Use <em>Edit this Page</em> to make a change via a PR</p>
+<p><a href="/docs-as-code" target="_self" ><a href="https://cchesser.github.io/docs-as-code/">https://cchesser.github.io/docs-as-code/</a></a></p>
+<p class="fragment fade-up">✍️ Try the <em>Edit this Page</em> link to make a change via a PR</p>
 <p class="fragment fade-up">⚙️ See build process on pull request and preview</p>
 </section>
     <section><h2 id="recap">Recap</h2>
@@ -372,6 +403,9 @@ jobs:
 <p class="fragment fade-up">📚 Background of how others have approached it</p>
 <p class="fragment fade-up">❤️ Benefits and how it lends to common problems in documentation</p>
 <p class="fragment fade-up">🚀 Examples with: Markdown, Hugo, Docsy, GitHub, GitHub Actions, GitHub Pages</p>
+</section><section>
+<h2 id="thank-you">Thank You</h2>
+<p><img src="img/sponsor-thank-you.png" alt=""></p>
 </section><section>
 <section data-background-color="white" >
 <p style="width: 500px;" >
