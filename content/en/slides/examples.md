@@ -175,13 +175,52 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages</code></pre>
 
+---
+
+## GitHub Actions
+
+Test your docs (spellcheck)!
+
+<small>Include in `.github/workflows/validation.yaml` file.</small>
+
+<pre><code data-line-numbers="3-7|20">name: validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  spell-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Check out the code
+      - uses: actions/setup-node@v1
+        name: Run spell check
+        with:
+          node-version: "12"
+      - run: npm install -g cspell
+      - run: cspell lint --config .github/cspell.json "content/**/*.md"</code></pre>
+
+---
+
+## GitHub Actions
+
+✅ Enforce your tests in pull requests
+
+<div class="r-stack">
+<img class="fragment" src="img/pr-fail-1.png" />
+<img class="fragment" src="img/pr-fail-2.png" />
+</div>
 
 ---
 
 ## 📑
 ## GitHub Pages
 
-<p class="fragment fade-up">⚒️ Build and test your docs on pull requests</p>
+<p class="fragment fade-up">⚒️ GitHub Actions build content on PRs and main</p>
 <p class="fragment fade-up">🧆 Generate and store static content for serving</p>
 
 ---
@@ -189,7 +228,7 @@ jobs:
 ## 🧪
 ## Try it out!
 
-Try out <a href="/docs-as-code" target="_self" >the example site</a> by:
+<a href="/docs-as-code" target="_self" >https://cchesser.github.io/docs-as-code/</a>
 
-<p class="fragment fade-up">✍️ Use <em>Edit this Page</em> to make a change via a PR</p>
+<p class="fragment fade-up">✍️ Try the <em>Edit this Page</em> link to make a change via a PR</p>
 <p class="fragment fade-up">⚙️ See build process on pull request and preview</p>

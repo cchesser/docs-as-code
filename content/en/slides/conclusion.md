@@ -15,6 +15,12 @@ outputs:
 
 ---
 
+## Thank You
+
+![](img/sponsor-thank-you.png)
+
+---
+
 <section data-background-color="white" >
 <p style="width: 500px;" >
 <img src="img/title.png" style="float: left" />
@@ -31,3 +37,5 @@ outputs:
 </section>
 
 ---
+
+
